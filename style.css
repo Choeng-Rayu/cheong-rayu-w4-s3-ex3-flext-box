@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-container{
+    display: flex;
+    gap: 2em;
+    background-color: gainsboro;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.pricing-plan{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    overflow: hidden;  
+    min-width: 250px;
+    min-height: 350px;
+    box-shadow: 5px 5px 10px 0px;
+    cursor: pointer;
+}
+.plan-title{
+    height: 70px;
+    align-content: center;
+    color: aliceblue;
+    font-size: 40px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: linear-gradient(to right,rgb(49, 190, 171),rgb(15, 87, 159));
+}
+.plan-price {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+.number{
+    font-size: 40px;
+    background: linear-gradient(to right, rgb(116, 184, 22), rgb(208, 43, 181));
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+.usd{
+    background: linear-gradient(to right, rgb(222, 8, 97), rgb(70, 146, 222));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.usd1{
+    margin-bottom: 5px;
+    justify-content: flex-end;
+    align-content: end;
+    background: linear-gradient(to right, rgb(116, 184, 22), rgb(70, 146, 222));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.plan-features{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid rgb(236, 231, 231);
+    padding: 10px;
+    padding-left:40px;
+    text-align: start;
+}
+
+.plan-button{
+    background-image: linear-gradient(to right,rgb(49, 190, 171),rgb(15, 87, 159));
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.plan-button:hover{
+    background-image: linear-gradient(to right,rgb(116, 184, 22),rgb(70, 146, 222));
+    transition: 0.8s;
+}
+.pricing-plan:hover{
+    box-shadow: 0px 5px 5px 0px;
+    transform: 0.5s;
+}
